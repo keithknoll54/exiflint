@@ -1,0 +1,4 @@
+/exiflint
+*.exe
+*.test
+*.out
