@@ -46,10 +46,11 @@ broken.jpg: invalid EXIF data: tag Model: value offset 91742 out of range
 
 ## Current scope
 
-Only IFD0 is read right now - the handful of tags most JPEGs set directly
-(Make, Model, Orientation, DateTime, resolution, Software, Artist,
-Copyright). The EXIF sub-IFD (exposure time, ISO, lens info) and the GPS
-IFD are not walked yet; unknown tags are skipped rather than guessed at.
+IFD0 (Make, Model, Orientation, DateTime, resolution, Software, Artist,
+Copyright) and the EXIF sub-IFD (exposure time, f-number, ISO, focal
+length, lens make and model) are read. The GPS IFD is not walked yet;
+unknown tags are skipped rather than guessed at. Rational values print as
+num/den, not as decimals.
 
 ## Layout
 
